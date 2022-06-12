@@ -1,6 +1,6 @@
 coroutine.wrap(function()
     syn.queue_on_teleport([[
-        local HTTP = game:GetService"HttpService"
+        local HTTP = syn.request
 
         local function getAmountOfBadges(userId)
             local badges = HTTP:GetAsync("https://badges.roblox.com/v1/users/" .. userId .. "/badges?limit=100&sortOrder=Asc")
