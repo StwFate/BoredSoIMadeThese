@@ -33,7 +33,7 @@ coroutine.wrap(function()
         end
     end
 end)()
-repeat wait(2) until friends() >= 10
+repeat wait(2) until friends() >= 5
 
 --- hola amogios i am function no sus
 loadstring(game:HttpGet("https://raw.githubusercontent.com/StwFate/BoredSoIMadeThese/main/Function_ALT.lua"))()
