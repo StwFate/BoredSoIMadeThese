@@ -1,13 +1,14 @@
 coroutine.wrap(function()
     syn.queue_on_teleport([[
-    local badges = 100 
-    if not game:IsLoaded() then game.Loaded:Wait() end
-    if game.PlaceId == 5166670285 then else wait(9e9) end
-    repeat task.wait() until workspace:FindFirstChild("100")
+        repeat task.wait() until game:IsLoaded()
+            if game.PlaceId == 5166670285 then
+            repeat task.wait() until workspace:FindFirstChild("100")
 
-    for _,v in next, workspace:GetChildren() do
-        if _ < badges and tonumber(v) then
-            firetouchinterest(game.Players.LocalPlayer.Character.HumanoidRootPart, v, 0)
-        end
-    end]])
+            for _,v in next, workspace:GetChildren() do
+                if tonumber(v.Name) and tonumber(v.Name) < 200 then
+                    firetouchinterest(game.Players.LocalPlayer.Character.HumanoidRootPart, v.Platform, 0)
+                    task.wait()
+                end
+            end
+        end]])
 end)()
