@@ -5,12 +5,13 @@ coroutine.wrap(function()
             repeat task.wait() until workspace:FindFirstChild("100")
 
             for _,v in next, workspace:GetChildren() do
-                if tonumber(v.Name) and tonumber(v.Name) < 200 then
+                if tonumber(v.Name) then
                     firetouchinterest(game.Players.LocalPlayer.Character.HumanoidRootPart, v.Platform, 0)
-                    task.wait()
+                    firetouchinterest(game.Players.LocalPlayer.Character.HumanoidRootPart, v.Platform, 1)  
+                    wait()
                 end
             end
-            wait(6)
+            wait(8)
             game.Players.LocalPlayer:Kick("done")
         end]])
 end)()
